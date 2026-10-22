@@ -1,0 +1,31 @@
+{
+    "name": "czetech/domotron-cloud-auth",
+    "description": "Domotron Cloud SSO: session cookie contract, identity and permissions client",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["domotron", "cloud", "sso", "permissions"],
+    "require": {
+        "php": "^8.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Domotron\\CloudAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Domotron\\CloudAuth\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
